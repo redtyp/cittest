@@ -6,7 +6,7 @@ pipeline {
         stage('build') {
           steps {
             echo 'step 1'
-            mail(subject: 'step 1 done', body: 'hi,step 1 was done')
+            mail(subject: 'step 1 done', body: 'hi,step 1 was done', to: 'dawei.yuan@cfgdc.ne')
           }
         }
         stage('message') {
